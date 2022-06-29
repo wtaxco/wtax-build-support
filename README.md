@@ -11,8 +11,9 @@ easily using public URLs, e.g. this file's URL is https://raw.githubusercontent.
 Various reusable suppression files for the OWASP Dependency Check, to
 work around commonly encountered false positives, are available here:
 
-| File                               | Description                                                                                                                                    |
-|------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------|
-| `suppression.xml`                  | Contains suppression rules commonly needed in our Spring Boot-based projects. Useful as a base suppression file for most Spring Boot projects. |
-| `suppression-CVE-2016-1000027.xml` | Contains a suppression rule for [CVE-2016-1000027](https://www.cvedetails.com/cve/CVE-2016-1000027/)                                           |
+| File                               | Description                                                                                                                                     |
+|------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
+| `suppression.xml`                  | Contains suppression rules commonly needed in our Spring Boot-based projects. Useful as a base suppression file for most Spring Boot projects.  |
+| `suppression-CVE-2016-1000027.xml` | Contains a suppression rule for [CVE-2016-1000027](https://www.cvedetails.com/cve/CVE-2016-1000027)                                             |
+| `suppression-CVE-2020-5408.xml`    | Contains a suppression rule for [CVE-2020-5408](https://www.cvedetails.com/cve/CVE-2020-5408)                                                   |
 
