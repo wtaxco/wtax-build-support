@@ -10,4 +10,9 @@ Documentation: https://jeremylong.github.io/DependencyCheck/general/suppression.
         <packageUrl regex="true">^pkg:maven/org\.springframework/spring.*$</packageUrl>
         <cve>CVE-2016-1000027</cve>
     </suppress>
+    <suppress>
+        <notes>Ignores CVE-2020-5408 since it only applies to Encryptors#queryableText which is deprecated and should not be used.</notes>
+        <packageUrl regex="true">^pkg:maven/org\.springframework\.security/spring-security-crypto@.*$</packageUrl>
+        <cve>CVE-2020-5408</cve>
+    </suppress>
 </suppressions>
