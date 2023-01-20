@@ -15,4 +15,19 @@ Documentation: https://jeremylong.github.io/DependencyCheck/general/suppression.
         <packageUrl regex="true">^pkg:maven/org\.springframework\.security/spring-security-crypto@.*$</packageUrl>
         <cve>CVE-2020-5408</cve>
     </suppress>
+    <suppress>
+        <notes>Ignores CVE-2021-37533 since it only applies to commons-net but somehow dependency check is flagging *all* Apache Commons libraries.</notes>
+        <filePath regex="true">.*\commons-io-.*\.jar</filePath>
+        <cve>CVE-2021-37533</cve>
+    </suppress>
+    <suppress>
+        <notes>Ignores CVE-2021-37533 since it only applies to commons-net but somehow dependency check is flagging *all* Apache Commons libraries.</notes>
+        <filePath regex="true">.*\commons-compress-.*\.jar</filePath>
+        <cve>CVE-2021-37533</cve>
+    </suppress>
+    <suppress>
+        <notes>Ignores CVE-2021-37533 since it only applies to commons-net but somehow dependency check is flagging *all* Apache Commons libraries.</notes>
+        <filePath regex="true">.*\commons-math3-.*\.jar</filePath>
+        <cve>CVE-2021-37533</cve>
+    </suppress>
 </suppressions>
